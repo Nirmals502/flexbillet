@@ -1,0 +1,107 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="Fragments.Scan_history">
+
+    <!-- TODO: Update blank fragment layout -->
+
+
+    <TextView
+        android:id="@+id/textView13"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="15dp"
+        android:text="@string/search"
+        android:textColor="#F7931E"
+        android:textSize="30sp"
+        android:textStyle="normal|bold" />
+
+    <TextView
+        android:id="@+id/textView15"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView13"
+        android:layout_alignStart="@+id/textView13"
+        android:layout_below="@+id/textView13"
+        android:layout_marginTop="18dp"
+        android:text="@string/order_ref_"
+        android:textSize="15sp" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:layout_below="@+id/textView15"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        android:id="@+id/editText4"
+        android:textColor="#F7931E"
+        android:layout_marginLeft="24dp"
+        android:layout_marginRight="25dp"
+        android:background="@drawable/text_input_field"
+        android:paddingLeft="10dp"
+        android:hint="@string/search"
+        android:imeOptions="actionDone"
+        android:textColorHint="#F7931E" />
+
+    <TextView
+        android:id="@+id/textView16"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/editText4"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="15dp"
+        android:textSize="18sp"
+        android:textStyle="normal|bold" />
+
+    <ExpandableListView
+        android:id="@+id/list_vw"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/button2"
+        android:layout_alignTop="@+id/textView16"
+        android:layout_marginBottom="10dp"
+        android:layout_toEndOf="@+id/textView16"
+        android:layout_toRightOf="@+id/textView16"
+        android:groupIndicator="@null" />
+
+    <Button
+        android:text="@string/search"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:id="@+id/button2"
+        android:background="@drawable/orange_buttonn"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="15dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:textColor="@color/white"
+        android:textStyle="normal|bold" />
+    <ImageView
+        android:id="@+id/scan_image"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/imageView6"
+        android:layout_alignEnd="@+id/camera_preview"
+        android:layout_alignLeft="@+id/camera_preview"
+        android:layout_alignRight="@+id/camera_preview"
+        android:layout_alignStart="@+id/camera_preview"
+        android:layout_alignTop="@+id/camera_preview"
+        android:layout_marginBottom="70dp"
+        android:layout_marginLeft="70dp"
+        android:layout_marginRight="70dp"
+        android:layout_marginTop="70dp"
+        android:layout_toStartOf="@+id/imageView6"
+        android:src="@drawable/ok"
+        android:visibility="gone" />
+
+</RelativeLayout>
